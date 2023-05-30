@@ -3,29 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="API test page">
+    <meta name="description" content="auto maintenace application">
     <meta name="author" content="This page authored by timokent">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    <title>Auto Mx</title>
-    <link rel="shortcut icon" href="#">
+    <title>Auto mXr | Home</title>
+    <link rel="icon" href="/images/eb-big.svg">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul id="navmenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="addcar.html">Add Car</a></li>
-                <li><a href="maintain.html">Add Maintenance</a></li>
-            </ul>
-        </nav>
+    <header id="main-header">
     </header>
-    <div class="container">
-        <p>myCars Home</p>
-        <section class="myCarList">
-        
+    <main>
+        <div class="hero">
+            <img
+                src="images/mXr-banner-sm.jpg"
+                srcset="/images/mXr-banner-sm.jpg 500w, /images/mXr-banner.jpg"
+                alt="image of old van and 4x4"
+                />
+            <div class="logo logo--square">
+                <img src="images/eb-big.jpg" alt="recreational vehicle" />
+                <div>Auto<span class="highlight">mXr</span></div>
+            </div>
+        </div>
+        <section class="mission">
+            <p>Automobiles are expensive...</p>
+            <p>Negligence makes it worse!</p>
+            <p>Don't make it worse!</p>
+            <p class="emphasis">Tracking auto maintenance can keep old iron on the road.</p>
         </section>
-    </div>
+        <section class="main-grid">
+        <div class="mycars container">
+          <a href="mycars.html"
+            ><img
+              src="./images/eb-big.svg"
+              alt="sketch of truck"
+            />
+            <h2>My Cars</h2></a> 
+
+          <a href="addcar.html"
+            ><div class="addcar container">
+                <img
+                src="images/add-big.jpg"
+                alt="sketch of add symbol"
+                />
+            </div>
+            <h2>Add Car</h2></a>
+          <a href="maintain.html"
+            ><div class="maintain container">
+                <img
+                src="/images/wrench-big.jpg"
+                alt="sketch of wrench"
+                />
+          </div>
+          <h2>Maintain!</h2></a>
+        </div>
+      </section>
+    </main>
+    <footer id="main-footer"></footer>
+
     <script type="module" src="./js/main.js"></script>
-    
-</body>
+    </body>
 </html>

@@ -1,4 +1,6 @@
-import { getLocalStorage, getParam, setLocalStorage } from "./utils.mjs";
+import { getLocalStorage, getParam, setLocalStorage, loadHeaderFooter } from "./utils.mjs";
+
+loadHeaderFooter();
 
 const myCarList = document.querySelector(".myCarList");
 const button = document.getElementById("savemx");
