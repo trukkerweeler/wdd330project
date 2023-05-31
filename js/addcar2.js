@@ -29,7 +29,8 @@ function getModels() {
   })
     .then((response) => response.json())
     .then((response) => {
-      // console.log(response);
+      console.log(response);
+      console.log("-----------------------------------------")
 
       const modelData = response.data      
       modelData.forEach(({name, make}) => {
@@ -38,12 +39,13 @@ function getModels() {
           const makeOption = document.createElement("option")
           makeOption.innerText = make.name
           makeElement.appendChild(makeOption)
+          
           models[make.name] = []
         }
         models[make.name] = [...models[make.name], name ]
         console.log(make['name'], '-', name)
       });
-      // console.log(models)
+      console.log(models)
 
       makeElement.addEventListener("change", () => {
       modelElement.removeAttribute("disabled")
