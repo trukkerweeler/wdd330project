@@ -1,7 +1,6 @@
 import { loadHeaderFooter } from "./utils.mjs";
-loadHeaderFooter();
+await loadHeaderFooter();
 
-// const date = document.getElementById('main-footer');
-// console.log(date)
-document.getElementById('main-footer').textContent = new Date(Date.now()).getFullYear();
-// console.log(Date.now()).getFullYear())
+const date = document.getElementById("date");
+console.log(date);
+date.innerHTML = `${new Date(Date.now()).getFullYear()}  Auto mXr is NOT a real business!`;
