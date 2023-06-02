@@ -2,7 +2,7 @@
   "type": "module",
   "name": "automx",
   "version": "1.0.0",
-  "description": "Boilerplate for WDD 330 final project",
+  "description": "WDD 330 final project",
   "main": "main.js",
   "scripts": {
     "start": "vite",
