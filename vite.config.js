@@ -5,6 +5,7 @@ export default defineConfig({
   root: 'src/',
 
   build: {
+    target: 'esnext',
     outDir: '../dist',
     rollupOptions: {
       input: {
@@ -13,9 +14,7 @@ export default defineConfig({
         // product: resolve(__dirname, 'src/product_pages/index.html'),
         // product_listing: resolve(__dirname, 'src/product_listing/index.html'),
       },
-    },
-    build: {
-      target: 'esnext'
+    minify: 'esbuild'
     },
   },
 });
