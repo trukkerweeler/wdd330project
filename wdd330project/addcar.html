@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Auto mXr page">
+    <meta name="author" content="This page authored by timokent">
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    <title>Auto Mx | Add Cars</title>
+    <link rel="shortcut icon" href="#">
+</head>
+<body>
+    <header id="main-header"></header>
+    <nav>
+        <ul id="navmenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mycars.html">My Cars</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="myCars">Add Car:</h1>
+        <div class="nickName">
+            <label for="carname">My car name:</label>
+            <input name="carname" id="carname" required placeholder="enter car name">
+        </div>
+        <div id="loading" class="hidden">
+            loading...
+        </div>
+        <div class="selects">
+            <label for="make">Choose car make:</label>
+            <select id="make"></select>
+        </div>
+        <div class="selects">
+            <label for="model">Choose car model:</label>
+            <select id="model"></select>
+        </div>
+        <div class="btn selects">
+            <button id="save-model">Save Model</button>
+        </div>
+        <br>        
+    </main>
+    <footer id="main-footer"></footer>
+    <script type="module" src="./js/addcar.js"></script>
+    
+</body>
+</html>
