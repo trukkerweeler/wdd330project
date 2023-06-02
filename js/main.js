@@ -1,6 +1,6 @@
 import { loadHeaderFooter } from "./utils.mjs";
-// await loadHeaderFooter();
-loadHeaderFooter();
+await loadHeaderFooter();
+// loadHeaderFooter();
 
 // const date = document.getElementById("date");
 // console.log(date);
